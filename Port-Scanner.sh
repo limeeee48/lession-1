@@ -5,23 +5,21 @@
 _help_function()
 {
 cat <<EOF
-====================
-  Tool Description :
-====================
- this tool shows how /dev/tcp works
- for checking ports.
-=============
-   USAGE :
-=============
- Open the tool code and replace "google.com"
- with the ip you want.
 
- Run the tool and give port number .
+this tool shows how /dev/tcp works
+for checking ports.
 
- you can also replace timeout sec .
-=============
-  Example :
-=============
+USAGE :
+
+Open the tool code and replace "google.com"
+with the ip you want.
+
+Run the tool and give port number .
+
+you can also replace timeout sec .
+
+Example :
+
 $0 80
 EOF
 }
