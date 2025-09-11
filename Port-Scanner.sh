@@ -31,8 +31,12 @@ case "$1" in
 	[0-9][0-9][0-9])
 		_port=$1
 		;;
-	*)
+	[0-9][0-9][0-9][0-9])
+ 		_port=$1
+ 		;;	
+  *)
 		_help_function ; exit
+  
 esac
 #_command="echo > /dev/tcp/google.com/$_port"
 #read port1
