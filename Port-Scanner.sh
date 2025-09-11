@@ -1,6 +1,16 @@
 
 
 #echo "export PORTIMEOUT=$PORTIMEOUT" > ~/.bashrc ; source ~/.bashrc
+
+_help_function()
+{
+cat <<EOF
+Simple Port Scanner Using
+
+EOF
+}
+
+
 case "$1" in
 	[0-9][0-9])
 		_port=$1
@@ -9,7 +19,7 @@ case "$1" in
 		_port=$1
 		;;
 	*)
-		echo -e "\e[1;31mPort Unknown\e[0m" ; exit 1
+		_help_function ; exit
 esac
 #_command="echo > /dev/tcp/google.com/$_port"
 #read port1
